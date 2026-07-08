@@ -1,0 +1,17 @@
+<h2>{{ q[1] }}</h2>
+
+<form method="POST" action="/submit">
+    <input type="radio" name="option" value="{{ q[2] }}"> {{ q[2] }}<br>
+    <input type="radio" name="option" value="{{ q[3] }}"> {{ q[3] }}<br>
+    <input type="radio" name="option" value="{{ q[4] }}"> {{ q[4] }}<br>
+    <input type="radio" name="option" value="{{ q[5] }}"> {{ q[5] }}<br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p>{{ msg }}</p>
+
+<br>
+
+<a href="/prev"><button>⬅ Previous</button></a>
+<a href="/next"><button>Next ➡</button></a>
